@@ -19,14 +19,14 @@
    para obtener el resultado es la siguiente:
    EDAD NIVEL HEMOGLOBINA.
 
-   > 0 - 1 mes 13 - 26 g%.
-   > 1 y < = 6 meses 10 - 18 g%.
-   > 6 y < = 12 meses 11 - 15 g%.
-   > 1 y < = 5 años 11.5 - 15 g%.
-   > 5 y < = 10 años 12.6 - 15.5 g%.
-   > 10 y < = 15 años 13 - 15.5 g%.
-   > mujeres > 15 años 12 - 16 g%.
-   > hombres > 15 años 14 - 18 g%.
+   - 0 - 1 mes 13 - 26 g%.
+   - 1 y < = 6 meses 10 - 18 g%.
+   - 6 y < = 12 meses 11 - 15 g%.
+   - 1 y < = 5 años 11.5 - 15 g%.
+   - 5 y < = 10 años 12.6 - 15.5 g%.
+   - 10 y < = 15 años 13 - 15.5 g%.
+   - mujeres > 15 años 12 - 16 g%.
+   - hombres > 15 años 14 - 18 g%.
 
    ✅
 
