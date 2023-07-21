@@ -3,10 +3,10 @@
 1. Una frutería ofrece las manzanas con descuento según la siguiente tabla:
    NUM. DE KILOS COMPRADOS % DESCUENTO.
 
-   > 0 - 2 % 0%.
-   > 2.01 - 5 10%.
-   > 5.01 - 10 15%.
-   > 10.01 en adelante 20%.
+   - 0 - 2 % 0%.
+   - 2.01 - 5 10%.
+   - 5.01 - 10 15%.
+   - 10.01 en adelante 20%.
 
    Determinar cuánto pagara una persona que compre manzanas es esa frutería.
    ✅
@@ -52,30 +52,31 @@
    > Si el promedio es menor de 9.5 y el alumno es de profesional, entonces podrá cursar 55 unidades y no tendrá descuento.
 
    Obtener el total que tendrá que pagar un alumno si la colegiatura para alumnos de profesional es de $300 por cada cinco unidades y para alumnos de preparatoria es de $180 por cada cinco unidades.
+   ✅
 
 ---
 
-4. Que lea tres números diferentes y determine el numero medio del conjunto de los tres números (el numero medio es aquel numero que no es ni mayor, ni menor)
+4. Que lea tres números diferentes y determine el numero medio del conjunto de los tres números (el numero medio es aquel numero que no es ni mayor, ni menor) ✅
 
 ---
 
-5. El gobierno del estado de México desea reforestar un bosque que mide determinado numero de hectáreas.
-   > Si la superficie del terreno excede a 1 millón de metros cuadrados, entonces decidirá sembrar de la sig.
-   > manera:
+5. El gobierno del estado de México desea reforestar un bosque que mide determinado numero de hectáreas. Si la superficie del terreno excede a 1 millón de metros cuadrados, entonces decidirá sembrar de la sig. manera:
+
    > Porcentaje de la superficie del bosque Tipo de árbol:
-   > 70% pino
-   > 20% oyamel
-   > 10% cedro
-   > Si la superficie del terreno es menor o igual a un millón de metros cuadrados, entonces decidirá
-   > sembrar de la sig. manera:
+
+   - 70% pino
+   - 20% oyamel
+   - 10% cedro
+
+   Si la superficie del terreno es menor o igual a un millón de metros cuadrados, entonces decidirá sembrar de la sig. manera:
+
    > Porcentaje de la superficie del bosque Tipo de árbol
-   > 50% pino
-   > 30% oyamel
-   > 20% cedro
-   > El gobierno desea saber el numero de pinos, oyameles y cedros que tendrá que sembrar en el bosque,
-   > si se sabe que en 10 metros cuadrados caben 8 pinos, en 15 metros cuadrados caben 15 oyameles
-   > y en 18 metros cuadrados caben 10 cedros. También se sabe que una hectárea equivale a 10 mil
-   > metros cuadrados.
+
+   - 50% pino
+   - 30% oyamel
+   - 20% cedro
+
+   **El gobierno desea saber el numero de pinos, oyameles y cedros que tendrá que sembrar en el bosque, si se sabe que en 10 metros cuadrados caben 8 pinos, en 15 metros cuadrados caben 15 oyameles y en 18 metros cuadrados caben 10 cedros. También se sabe que una hectárea equivale a 10 mil metros cuadrados.**
 
 ---
 

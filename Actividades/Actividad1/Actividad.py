@@ -141,7 +141,7 @@ tiene un Promedio de {promedio} con {NotasReprobadas} notas reprovadas
 se le dara una oportunidad de {unidades} unidades 
 que tienen en cuenta que la unidad del {tipoAlumno} sale en ${unidad}  
 y con un descuento del {descuento}% 
-el total sera de: {total} y si hay descuento: {totalConDescuento}
+el total sera de: {total}$ y si hay descuento: {totalConDescuento}$
         ***
 """
 
@@ -173,4 +173,35 @@ el total sera de: {total} y si hay descuento: {totalConDescuento}
     print(response)
 
 
-InstitucionEduc()
+def numerosDiferentes():
+    numeros = []
+    print(" *** Numeros diferentes ***")
+    while len(numeros) < 3:
+        saltar = False
+        numero = int(input("Coloque numero: "))
+
+        if len(numeros) == 0:
+            numeros.append(numero)
+        else:
+            for x in numeros:
+                if x == numero:
+                    print("coloque un numero distinto al que ya a puesto")
+                    saltar = True
+                    break
+            if not saltar:
+                numeros.append(numero)
+            else:
+                pass
+
+    numerosCadena = [str(numero) for numero in numeros]
+    print(numerosCadena)
+    NumerosOrdenados = ", ".join(numerosCadena)
+
+    print(f"""\n
+Los numeros ingresados son { NumerosOrdenados }.
+siendo el numero del medio {numeros[1]} 
+"""
+          )
+
+
+numerosDiferentes()
