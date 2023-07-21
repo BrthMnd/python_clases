@@ -1,11 +1,13 @@
 # Actividad
 
 1. Una frutería ofrece las manzanas con descuento según la siguiente tabla:
-   NUM. DE KILOS COMPRADOS % DESCUENTO
-   0 - 2 % 0%
-   2.01 - 5 10%
-   5.01 - 10 15%
-   10.01 en adelante 20%
+   NUM. DE KILOS COMPRADOS % DESCUENTO.
+
+   > 0 - 2 % 0%.
+   > 2.01 - 5 10%.
+   > 5.01 - 10 15%.
+   > 10.01 en adelante 20%.
+
    Determinar cuánto pagara una persona que compre manzanas es esa frutería.
    ✅
 
@@ -15,7 +17,7 @@
    si una persona tiene anemia o no, lo cual depende de su nivel de hemoglobina en la sangre, de su edad y de su sexo. Si el nivel de hemoglobina que tiene una persona es menor que el rango que le corresponde, se determina su resultado como positivo y en caso contrario como negativo. La tabla en la que el medico se basa.
 
    para obtener el resultado es la siguiente:
-   EDAD NIVEL HEMOGLOBINA
+   EDAD NIVEL HEMOGLOBINA.
 
    > 0 - 1 mes 13 - 26 g%.
    > 1 y < = 6 meses 10 - 18 g%.
