@@ -204,4 +204,148 @@ siendo el numero del medio {numeros[1]}
           )
 
 
-numerosDiferentes()
+def Reforestacion():
+    print("\t Reforestar por Hectareas")
+
+    def CalcularTerreno(supTerreno):
+
+        hectarea = supTerreno / 10000
+
+        if supTerreno > 1000000:
+            pino = 0.7
+            oyamel = 0.2
+            cedro = 0.10
+        else:
+            pino = 0.5
+            oyamel = 0.3
+            cedro = 0.2
+
+        sembrarPino = hectarea * pino
+        sembrarOyamel = hectarea * oyamel
+        sembrarCedro = hectarea * cedro
+
+        return sembrarPino, sembrarOyamel, sembrarCedro, hectarea
+
+    supTerreno = float(
+        input("introduzca el tamaño del terreno por metros cuadrados: "))
+
+    pino, oyamel, cedro, hectarea = CalcularTerreno(supTerreno)
+    print(f"Arboles de pino:{pino}")
+    print(f"Arboles de oyamel:{oyamel}")
+    print(f"Arboles de cedro:{cedro}")
+    print(f"De: {supTerreno:,} m^2 . Un total de: {hectarea:,} Hectareas")
+    # no muy claro
+
+
+def NumeroMenor():
+    numeros = []
+    cantidad = int(input("Ingrese la cantidad de numeros a ingresar"))
+
+    for i in range(cantidad):
+        numeros.append(int(input("Coloque Numero: ")))
+
+    minimo = min(numeros)
+    repetidos = numeros.count(minimo)
+
+    numerosCadena = [str(numero) for numero in numeros]
+    numerosCadena = ", ".join(numerosCadena)
+
+    print(
+        f"de la lista de numeros {numerosCadena} el menor es: {minimo} y se repite {repetidos} veces")
+
+
+def SeñoraSupermercado():
+    carrito = {}
+    print("""
+\t Compras en el super mercado
+escoja la opcion "s" para si y "n" para no.
+""")
+
+    def CalculoArticulo(articulo, cantidad, valor):
+        if articulo in carrito:
+            carrito[articulo].extend([valor] * cantidad)
+        else:
+            carrito[articulo] = [valor] * cantidad
+
+    while True:
+        option = input("opcion -> ")
+        option = option.capitalize()
+        if option == "S":
+            articulo = input("Escoja el articulo: ")
+            cantidad = int(input("Cantidad del articulo que se llevará: "))
+            valor = float(input("Valor del articulo: "))
+            CalculoArticulo(articulo, cantidad, valor)
+        elif option == "N":
+            break
+        else:
+            print("Error al ingresar opcion, s/si - n/no")
+
+        print(f"\n\t El carrito tiene: ")
+        for art, can in carrito.items():
+            print(
+                f"{art} con una cantidad de {len(can)} y con un precio de {can[0]:,}$")
+        print("\n")
+
+    carrito
+    print("\tTotal de Compras:")
+    total = 0
+    for art, can in carrito.items():
+        total += sum(can)
+        print(
+            f"{art} con una cantidad de {len(can)} y con un precio de {sum(can):,}$")
+    print(f"en total: {total:,}\n")
+
+
+def CajeroSupermercado():
+    clientes = {}
+    list = []
+
+    print("""
+\t Caja registradora
+Si ya acabo el dia diga "n" de lo contrario "y"
+""")
+
+    def CalculoArticulo(nombre, articulo, cantidad, valor):
+        total = cantidad * valor
+        if nombre in clientes:
+            clientes[nombre].update({"Articulo": articulo, "Precio": valor})
+        else:
+            clientes[nombre] = {"Articulo": articulo, "Precio": valor}
+
+    while True:
+        option = input("opcion -> ")
+        option = option.capitalize()
+        if option == "S":
+            nombre = input("Nombre del Cliente: ")
+            articulo = input("Escoja el articulo: ")
+            cantidad = int(input("Cantidad del articulo que se llevará: "))
+            valor = float(input("Valor del articulo: "))
+
+            CalculoArticulo(nombre, articulo, cantidad, valor)
+            print("\n")
+        elif option == "N":
+            break
+        else:
+            print("Error al ingresar opcion, s/si - n/no recuerde: Si ya acabo el dia diga 'n' de lo contrario diga 's'")
+
+        print("Clientes atendidos")
+        if len(clientes) == 0:
+            pass
+        else:
+            for client, obj in clientes.items():
+                print(f"Cliente: {client}")
+                for key, value in obj.items():
+                    print(f"{key}:{value}")
+            print("\n")
+
+    for client, obj in clientes.items():
+        print(f"{client}")
+        for key, value in obj.items():
+            print(f"{key}:{value}")
+            if isinstance(value, (int, float)):
+                list.append(value)
+
+    print(list)
+
+
+CajeroSupermercado()

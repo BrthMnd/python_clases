@@ -60,7 +60,9 @@
 
 ---
 
-5. El gobierno del estado de México desea reforestar un bosque que mide determinado numero de hectáreas. Si la superficie del terreno excede a 1 millón de metros cuadrados, entonces decidirá sembrar de la sig. manera:
+5. El gobierno del estado de México desea reforestar un bosque que mide determinado numero de hectáreas.
+
+   Si la superficie del terreno excede a 1 millón de metros cuadrados, entonces decidirá sembrar de la sig. manera:
 
    > Porcentaje de la superficie del bosque Tipo de árbol:
 
@@ -77,29 +79,20 @@
    - 20% cedro
 
    **El gobierno desea saber el numero de pinos, oyameles y cedros que tendrá que sembrar en el bosque, si se sabe que en 10 metros cuadrados caben 8 pinos, en 15 metros cuadrados caben 15 oyameles y en 18 metros cuadrados caben 10 cedros. También se sabe que una hectárea equivale a 10 mil metros cuadrados.**
+   ❌
 
 ---
 
-6. Elaborar un algoritmo que permita encontrar el valor menor entre un grupo de datos
-   > y el número de veces que éste se presenta.
+6. Elaborar un algoritmo que permita encontrar el valor menor entre un grupo de datos y el número de veces que éste se presenta.✅
 
 ---
 
-7. Mostrar en pantalla todos los números terminados en 6 comprendidos entre 25 y 250
+7. Mostrar en pantalla todos los números terminados en 6 comprendidos entre 25 y 250 ✅
 
 ---
 
-8. En un supermercado una ama de casa pone en su carrito los artículos que va
-   > tomando de los estantes. La señora quiere asegurarse de que el cajero le cobre
-   > bien lo que ella ha comprado, por lo que cada vez que toma un artículo anota su
-   > precio junto con la cantidad de artículos iguales que ha tomado y determina
-   > cuánto dinero gastara en ese artículo; a esto le suma lo que ira gastando en los
-   > demás artículos, hasta que decide que ya tomo todo lo que necesitaba. Ayúdale
-   > a esta señora a obtener el total de sus compras.
+8. En un supermercado una ama de casa pone en su carrito los artículos que va tomando de los estantes. La señora quiere asegurarse de que el cajero le cobre bien lo que ella ha comprado, por lo que cada vez que toma un **artículo** anota su **precio** junto con la **cantidad de aticulos iguales** que ha tomado y **determina cuánto dinero gastara en ese artículo**; a esto le suma lo que ira gastando en los demás artículos, hasta que decide que ya tomo todo lo que necesitaba. Ayúdale a esta señora a obtener el total de sus compras ✅
 
 ---
 
-9. En un supermercado un cajero captura los precios de los artículos que los
-   > clientes compran e indica a cada cliente cual es el monto de lo que deben
-   > pagar. Al final del día le indica a su supervisor cuanto fue lo que cobro en total a
-   > todos los clientes que pasaron por su caja.
+9. En un supermercado un cajero captura los precios de los artículos que los clientes compran e indica a cada cliente cual es el monto de lo que deben pagar. Al final del día le indica a su supervisor cuanto fue lo que cobro en total a todos los clientes que pasaron por su caja.
