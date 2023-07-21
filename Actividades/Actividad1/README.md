@@ -17,14 +17,14 @@
    para obtener el resultado es la siguiente:
    EDAD NIVEL HEMOGLOBINA
 
-   > 0 - 1 mes 13 - 26 g%
-   > 1 y < = 6 meses 10 - 18 g%
-   > 6 y < = 12 meses 11 - 15 g%
-   > 1 y < = 5 años 11.5 - 15 g%
-   > 5 y < = 10 años 12.6 - 15.5 g%
-   > 10 y < = 15 años 13 - 15.5 g%
-   > mujeres > 15 años 12 - 16 g%
-   > hombres > 15 años 14 - 18 g%
+   > 0 - 1 mes 13 - 26 g%.
+   > 1 y < = 6 meses 10 - 18 g%.
+   > 6 y < = 12 meses 11 - 15 g%.
+   > 1 y < = 5 años 11.5 - 15 g%.
+   > 5 y < = 10 años 12.6 - 15.5 g%.
+   > 10 y < = 15 años 13 - 15.5 g%.
+   > mujeres > 15 años 12 - 16 g%.
+   > hombres > 15 años 14 - 18 g%.
 
    ✅
 
@@ -43,16 +43,17 @@
 
    > Si el promedio es de 7 o menor, el numero de materias reprobadas es de 4 o mas y el alumno es de preparatoria, entonces podrá cursar 40 unidades y no tendrá ningún descuento.
 
+   ***
+
    > Si el promedio es mayor o igual a 9.5 y el alumno es de profesional, entonces podrá cursar 55 unidades y se le hará un 20% de descuento.
 
    > Si el promedio es menor de 9.5 y el alumno es de profesional, entonces podrá cursar 55 unidades y no tendrá descuento.
 
-   > Obtener el total que tendrá que pagar un alumno si la colegiatura para alumnos de profesional es de $300 por cada cinco unidades y para alumnos de preparatoria es de $180 por cada cinco unidades.
+   Obtener el total que tendrá que pagar un alumno si la colegiatura para alumnos de profesional es de $300 por cada cinco unidades y para alumnos de preparatoria es de $180 por cada cinco unidades.
 
 ---
 
-4. Que lea tres números diferentes y determine el numero medio del conjunto de los tres números (el numero
-   > medio es aquel numero que no es ni mayor, ni menor)
+4. Que lea tres números diferentes y determine el numero medio del conjunto de los tres números (el numero medio es aquel numero que no es ni mayor, ni menor)
 
 ---
 

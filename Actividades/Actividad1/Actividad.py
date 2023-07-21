@@ -106,4 +106,71 @@ Edad:{edad} ¿se cuenta en Meses?: {verifMes}
 """)
 
 
-Laboratorio()
+def InstitucionEduc():
+    inProValue = float(input("Coloque el promedio del alumno: "))
+
+    print("Coloque la opcion que corresponda al alumno.")
+    print("Preparatoria-> 1 | Profesional-> 2")
+    inPr = int(input("Opcion: "))
+    if (inPr > 0 and inPr < 3):
+        inPr = "Profesional"if inPr == 2 else "Preparatoria"
+    else:
+        print("Error al escoger la opcion")
+        return
+
+    # Valores predeterminados
+    # "Profesional": 60,
+    # "Preparatoria": 36
+    # Funcion para calcular
+    def CalcularUnidades(unidades, descuento, tipoAlumno, Reprobo, promedio):
+        NotasReprobadas = 0
+        if (Reprobo):
+            NotasReprobadas = int(input("Coloque las notas que a reprobado: "))
+
+        unidad = 60 if tipoAlumno == "Profesional" else 36
+
+        total = (unidad * unidades)
+        totalConDescuento = total * descuento
+
+        descuento = 0 if descuento == 0 else (100 % descuento)*100
+
+        return f"""
+        ***
+El alumno cursando su etapa {tipoAlumno} 
+tiene un Promedio de {promedio} con {NotasReprobadas} notas reprovadas 
+se le dara una oportunidad de {unidades} unidades 
+que tienen en cuenta que la unidad del {tipoAlumno} sale en ${unidad}  
+y con un descuento del {descuento}% 
+el total sera de: {total} y si hay descuento: {totalConDescuento}
+        ***
+"""
+
+    if (inProValue < 0 and inProValue > 10.1):
+
+        print("promedio no valido...")
+        return
+
+    # preparatiroa
+    if (inProValue >= 9.5 and inPr == "Preparatoria"):
+        response = CalcularUnidades(55, 0.75, inPr, False, inProValue)
+
+    elif (inProValue >= 9 and inProValue < 9.5 and inPr == "Preparatoria"):
+        response = CalcularUnidades(50, 0.9, inPr, False, inProValue)
+
+    elif (inProValue >= 7 and inProValue < 9 and inPr == "Preparatoria"):
+        response = CalcularUnidades(45, 0, inPr, False, inProValue)
+    elif (inProValue < 7 and inPr == "Preparatoria"):
+        response = CalcularUnidades(40, 0, inPr, True, inProValue)
+
+    # profesional
+    elif (inProValue >= 9.5 and inPr == "Profesional"):
+        response = CalcularUnidades(55, 0.8, inPr, False, inProValue)
+    elif (inProValue < 9.5 and inPr == "Profesional"):
+        response = CalcularUnidades(55, 0, inPr, False, inProValue)
+
+    # response
+
+    print(response)
+
+
+InstitucionEduc()
