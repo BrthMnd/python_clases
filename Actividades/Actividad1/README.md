@@ -78,8 +78,13 @@
    - 30% oyamel
    - 20% cedro
 
-   **El gobierno desea saber el numero de pinos, oyameles y cedros que tendrá que sembrar en el bosque, si se sabe que en 10 metros cuadrados caben 8 pinos, en 15 metros cuadrados caben 15 oyameles y en 18 metros cuadrados caben 10 cedros. También se sabe que una hectárea equivale a 10 mil metros cuadrados.**
-   ❌
+   ## **El gobierno desea saber el numero de pinos, oyameles y cedros que tendrá que sembrar en el bosque, si se sabe que en 10 metros cuadrados caben 8 pinos, en 15 metros cuadrados caben 15 oyameles y en 18 metros cuadrados caben 10 cedros. También se sabe que una hectárea equivale a 10 mil metros cuadrados.**
+
+   ***
+
+   ### **_nota:_**
+
+   No termine de entender <-
 
 ---
 
@@ -95,4 +100,4 @@
 
 ---
 
-9. En un supermercado un cajero captura los precios de los artículos que los clientes compran e indica a cada cliente cual es el monto de lo que deben pagar. Al final del día le indica a su supervisor cuanto fue lo que cobro en total a todos los clientes que pasaron por su caja.
+9. En un supermercado un cajero captura los **precios de los artículos** que los clientes compran e indica a **cada cliente** cual es el **monto de lo que deben pagar**. Al final del día le indica a su **supervisor** cuanto fue lo que **cobro en total a todos los clientes** que pasaron por su caja. ✅

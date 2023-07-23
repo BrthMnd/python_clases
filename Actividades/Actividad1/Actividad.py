@@ -214,7 +214,7 @@ def Reforestacion():
         if supTerreno > 1000000:
             pino = 0.7
             oyamel = 0.2
-            cedro = 0.10
+            cedro = 0.1
         else:
             pino = 0.5
             oyamel = 0.3
@@ -234,7 +234,7 @@ def Reforestacion():
     print(f"Arboles de oyamel:{oyamel}")
     print(f"Arboles de cedro:{cedro}")
     print(f"De: {supTerreno:,} m^2 . Un total de: {hectarea:,} Hectareas")
-    # no muy claro
+    # no muy claro aun
 
 
 def NumeroMenor():
@@ -298,19 +298,24 @@ escoja la opcion "s" para si y "n" para no.
 
 def CajeroSupermercado():
     clientes = {}
-    list = []
+    TotalDia = []
 
     print("""
 \t Caja registradora
-Si ya acabo el dia diga "n" de lo contrario "y"
+Si hay mas clientes "s"
+Si no hay mas clientes "n"
 """)
 
     def CalculoArticulo(nombre, articulo, cantidad, valor):
         total = cantidad * valor
-        if nombre in clientes:
-            clientes[nombre].update({"Articulo": articulo, "Precio": valor})
-        else:
-            clientes[nombre] = {"Articulo": articulo, "Precio": valor}
+
+        for name, list in clientes.items():
+            if nombre == name:
+                list.append({articulo: total})
+                return
+            else:
+                pass
+        clientes[nombre] = [{articulo: total}]
 
     while True:
         option = input("opcion -> ")
@@ -332,20 +337,30 @@ Si ya acabo el dia diga "n" de lo contrario "y"
         if len(clientes) == 0:
             pass
         else:
-            for client, obj in clientes.items():
-                print(f"Cliente: {client}")
-                for key, value in obj.items():
-                    print(f"{key}:{value}")
+            for client, list in clientes.items():
+                print(f"\nCliente: {client}")
+
+                for articulo in list:
+                    for name, value in articulo.items():
+                        print(f"{name}:{value:,}")
+
             print("\n")
 
-    for client, obj in clientes.items():
-        print(f"{client}")
-        for key, value in obj.items():
-            print(f"{key}:{value}")
-            if isinstance(value, (int, float)):
-                list.append(value)
+    if not (len(clientes) == 0):
+        for client, list in clientes.items():
+            print(f"\nCliente: {client}")
+            print(f"Articulo  |  Precio")
 
-    print(list)
+            for articulo in list:
+                for name, value in articulo.items():
+                    print(f"{name}  :  {value:,}")
+                if isinstance(value, (int, float)):
+                    TotalDia.append(value)
+    else:
+        print("Clientes Vacio...")
+
+    print(
+        f"\n El total de dinero hecho en todo el dia es: {sum(TotalDia):,} \n")
 
 
 CajeroSupermercado()
