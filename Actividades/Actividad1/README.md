@@ -100,4 +100,26 @@
 
 ---
 
-9. En un supermercado un cajero captura los **precios de los artículos** que los clientes compran e indica a **cada cliente** cual es el **monto de lo que deben pagar**. Al final del día le indica a su **supervisor** cuanto fue lo que **cobro en total a todos los clientes** que pasaron por su caja. ✅
+9. En un supermercado un cajero captura los precios de los artículos que los clientes compran e indica a cada cliente cual es el monto de lo que deben pagar. Al final del día le indica a su supervisor cuanto fue lo que cobro en total a todos los clientes que pasaron por su caja.
+
+---
+
+# notas:
+- computrabajo
+- q10
+- 
+
+I studied React for the project work
+I worked for a friend
+I s series of Netflix in English
+
+
+
+# notas:
+- computrabajo
+- q10
+- 
+
+I studied React for the project work
+I worked for a friend
+I s series of Netflix in English
