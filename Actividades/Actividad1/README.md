@@ -4,7 +4,7 @@
    NUM. DE KILOS COMPRADOS % DESCUENTO.
 
    - 0 - 2 % 0%.
-   - 2.01 - 5 10%.
+   - 2.01 - 5 10%. 
    - 5.01 - 10 15%.
    - 10.01 en adelante 20%.
 
