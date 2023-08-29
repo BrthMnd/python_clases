@@ -28,25 +28,30 @@ import random as rd
 fake = Faker()
 print(fake.name())
 
+
 def CreateExcelFile():
     libro = ox.Workbook()
     hoja = libro.active
     hoja.title = "datos bb"
     hoja.append(["Nombre", "Edad", "Direccion"])
-    for persona in range(1000000):
-        hoja.append([fake.name(),rd.randint(1,30),fake.address()])
+    for persona in range(10):
+        hoja.append([fake.name(), rd.randint(1, 30), fake.address()])
     libro.save("hola.xlsx")
-    return 
+    return
+
+
 CreateExcelFile()
+
 
 def ReadExcelFile():
     data = []
     libro = ox.load_workbook("hola.xlsx")
     hoja = libro["datos bb"]
-    for fila in hoja.iter_rows(min_row=2,values_only=True):
+    for fila in hoja.iter_rows(min_row=2, values_only=True):
         nombre, edad, direccion = fila
         data.append({"nombre": nombre, "Edad": edad, "direccion": direccion})
     libro.close()
     print(data)
-        
+
+
 ReadExcelFile()
